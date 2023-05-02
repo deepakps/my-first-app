@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
 // Date - 02nd May, 2023.
 @Component({
     selector: 'app-server',
-    template: './server.component.html'
+    templateUrl: './server.component.html'
 })
 export class ServerComponent {
-
 }
