@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-servers',
+  // Date - 02nd May, 2023.
+  // selector: 'app-servers', -- selector using tag.
+  // selector: '[app-servers]', -- selector using attribute.
+  selector: '.app-servers',
   template: `<h4>Components Section : </h4>
             <app-server />
             <app-server />`,
