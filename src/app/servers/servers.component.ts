@@ -12,5 +12,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent {
+  allowNewServer = false;
 
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+      console.log(`inside constructor. ${this.allowNewServer}`);
+    }, 2000);
+  }
 }
