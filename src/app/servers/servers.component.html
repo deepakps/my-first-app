@@ -1,8 +1,17 @@
-<label>Server Name</label>
+<!-- Passing & Using data with Event Binding. Date - 09th May, 2023.  -->
+<!-- <label>Server Name</label>
 <input type="text" 
 class="form-control"
 (input)="onUpdateServerName($event)">
+<p>{{serverName}} </p> -->
+
+<!-- Two way Binding. Date - 10th May, 2023.  -->
+<label>Server Name</label>
+<input type="text" 
+class="form-control"
+[(ngModel)]="serverName">
 <p>{{serverName}} </p>
+
 <!-- Property binding. '[]' indicates that we want to bind property.
 Date - 06th May, 2023. -->
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
